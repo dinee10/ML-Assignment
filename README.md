@@ -1,8 +1,5 @@
 # ML-Assignment: Heart Failure Prediction
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## Project Overview
 This project applies classical machine learning algorithms to predict **heart failure outcomes** (survival vs. death event) based on clinical records of patients. The goal is to compare multiple machine learning models and evaluate their performance on the same dataset.
@@ -29,8 +26,8 @@ Four different machine learning algorithms are implemented and compared:
 
 Each group member is responsible for implementing and evaluating one algorithm.
 
-> **Important Note on K-Means:**  
-> K-Means is an **unsupervised** clustering algorithm, while the other three are **supervised** classification algorithms. In this project, K-Means is used to discover natural patient groupings based on clinical features, and its clusters are later compared against the true `DEATH_EVENT` labels for evaluation.
+**Important Note on K-Means:**  
+K-Means is an **unsupervised** clustering algorithm, while the other three are **supervised** classification algorithms. In this project, K-Means is used to discover natural patient groupings based on clinical features, and its clusters are later compared against the true `DEATH_EVENT` labels for evaluation.
 
 ## Data Preprocessing
 The following preprocessing steps were applied to all models:
@@ -60,4 +57,3 @@ We evaluate using standard classification metrics on the **test set**:
 
 
 
-## Repository Structure
