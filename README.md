@@ -37,23 +37,7 @@ The following preprocessing steps were applied to all models:
 - **Train-test split:** 80% training / 20% testing (for supervised models)
 - **For K-Means:** Applied on the full feature set (or scaled features) without target leakage
 
-## How to Compare These 4 Models
-Since three models are supervised classifiers and one is unsupervised, we use a **two-tier evaluation approach**:
 
-### 1. Supervised Models (Logistic Regression, KNN, Random Forest)
-We evaluate using standard classification metrics on the **test set**:
-
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-score**
-- **Confusion Matrix**
-- **ROC-AUC** (optional for better comparison)
-
-### 2. K-Means (Unsupervised)
-- Use **Elbow Method** + **Silhouette Score** to determine optimal number of clusters (usually `k=2` to match binary target).
-- After clustering, map the two clusters to `DEATH_EVENT` labels (majority vote) and compute the same classification metrics above for fair comparison.
-- Additional metrics: Inertia (within-cluster sum of squares), Silhouette Score.
 
 
 
